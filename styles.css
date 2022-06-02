@@ -27,59 +27,49 @@ body {
 section {
     display: block;
 }
-section {
-    animation-duration: 5s;
-    animation-name: blinktext;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+
 @keyframes lightning {
-    from {
-        color: var(--yellow);
-        text-shadow: 5px 5px 10px var(--yellow);
-    }
-    to {
+    0% {
         color: var(--gray);
+        opacity: 0;
+    }
+    12.5% {
+        color: var(--yellow);
+        opacity: 1;
+        animation: alternate;
+        text-shadow: 2px 2px 8px var(--yellow);
     }
 }
 #one {
     animation-name: lightning;
-    animation-duration: 0.45s;
 }
 #two {
     animation-name: lightning;
     animation-delay: 0.2s;
-    animation-duration: 0.45s;
 }
 #three {
     animation-name: lightning;
     animation-delay: 0.4s;
-    animation-duration: 0.45s;
 }
 #four {
     animation-name: lightning;
     animation-delay: 0.6s;
-    animation-duration: 0.45s;
 }
 #five {
     animation-name: lightning;
     animation-delay: 0.8s;
-    animation-duration: 0.45s;
 }
 #six {
     animation-name: lightning;
     animation-delay: 1s;
-    animation-duration: 0.45s;
 }
 #seven {
     animation-name: lightning;
     animation-delay: 1.2s;
-    animation-duration: 0.45s;
 }
 #eight {
     animation-name: lightning;
     animation-delay: 1.4s;
-    animation-duration: 0.45s;
 }
 
 section span {
@@ -90,7 +80,7 @@ section span {
     font-weight: bold;
     animation-name: lightning;
     animation: infinite;
-    animation-duration: 1.5s;
+    animation-duration: 1.7s;
 }
 
 /* Von Aufgabe 1: */
