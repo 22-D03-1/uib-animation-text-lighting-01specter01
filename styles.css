@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+    letter-spacing: 30px;
+    font-size: 50px;
+}
+:root {
+    --primary: #262626;
+    --gray: #484848;
+    --yellow: #fff900;
+    --orange: #ff6c00;
+}
+body {
+    background-color: var(--primary);
+    color: var(--gray);
+}
+h1 {
+    animation-duration: 0.5s;
+    animation-name: blinktext;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+h1 {
+    font-size: 2em;
+
+    font-weight: bold;
+    display: block;
+    font-family: "Lato", sans-serif;
+
+    animation-delay: 3s;
+}
+
+@keyframes blinktext {
+    to {
+        text-shadow: 0px 0px 20px;
+
+        color: var(--yellow);
+    }
+}
